@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Rank Submission</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rank Submission Form</h1>
+        <form id="rankForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" accept="image/*" required>
+            
+            <label for="rank">Rank:</label>
+            <select id="rank" required>
+                <option value="First Rank">First Rank</option>
+                <option value="Second Rank">Second Rank</option>
+                <option value="Third Rank">Third Rank</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    
+        <canvas id="canvas" style="display: none;"></canvas>
+    </div>
+
+    
+</body>
+</html>
+```
